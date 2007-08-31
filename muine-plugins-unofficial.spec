@@ -7,6 +7,7 @@ Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: %{name}-%{version}.tar.bz2
+Patch: muine-plugins-unofficial-0.0.1-dllmap.patch
 License: GPL
 Group: Sound
 Url: http://www.public.asu.edu/~bnickel/MuinePluginsUnofficial/
@@ -16,6 +17,7 @@ BuildRequires: libalsa-devel
 BuildRequires: libGConf2-devel
 BuildArch: noarch
 Requires: libalsa
+%define _requires_exceptions ^lib.*
 
 %description
 This is a collection of plugins for the Muine audio player. It contains an
@@ -23,6 +25,7 @@ Alarm Clock and a Tray Icon plugin.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 ./configure --prefix=%_prefix --libdir=%_prefix/lib
