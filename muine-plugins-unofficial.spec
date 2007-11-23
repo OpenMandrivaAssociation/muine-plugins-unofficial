@@ -1,6 +1,6 @@
 %define name muine-plugins-unofficial
 %define version 0.0.1
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary: Collection of plugins for the Muine player
 Name: %{name}
@@ -35,6 +35,9 @@ Alarm Clock and a Tray Icon plugin.
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 mv %buildroot%buildroot/* %buildroot
+%if %_lib != lib
+mv %buildroot%_libdir %buildroot%_prefix/lib
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
