@@ -11,7 +11,6 @@ Patch: muine-plugins-unofficial-0.0.1-dllmap.patch
 License: GPL
 Group: Sound
 Url: http://www.public.asu.edu/~bnickel/MuinePluginsUnofficial/
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel muine
 BuildRequires: libalsa-devel
 BuildRequires: libGConf2-devel
