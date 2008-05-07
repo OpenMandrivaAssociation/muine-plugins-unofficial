@@ -15,7 +15,7 @@ Url: http://www.public.asu.edu/~bnickel/MuinePluginsUnofficial/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: mono-devel muine
 BuildRequires: libalsa-devel
-BuildRequires: libGConf2-devel
+BuildRequires: gnome-sharp2-devel
 BuildArch: noarch
 Requires: libalsa
 %define _requires_exceptions lib.*alsa2
