@@ -1,0 +1,12 @@
+diff -p -up muine-plugins-unofficial-1.0.0/configure.ac~ muine-plugins-unofficial-1.0.0/configure.ac
+--- muine-plugins-unofficial-1.0.0/configure.ac~	2007-02-21 00:07:18.000000000 +0100
++++ muine-plugins-unofficial-1.0.0/configure.ac	2008-05-07 13:27:38.000000000 +0200
+@@ -49,7 +49,7 @@ MUINE_PLUGINDIR=$libdir/muine/plugins/
+ AC_SUBST(MUINE_PLUGINDIR)
+ 
+ dnl GconfSharp
+-PKG_CHECK_MODULES(GCONF, gconf-sharp-2.0 >= $GCONF_REQUIRED)
++PKG_CHECK_MODULES(GCONF, gconf-sharp-2.0 >= $GCONF_REQUIRED gtk-sharp-2.0)
+ PKG_CHECK_MODULES(GNOMEVFS, gnome-vfs-sharp-2.0 >= $GNOMEVFS_REQUIRED)
+ PKG_CHECK_MODULES(GNOME, gnome-sharp-2.0 >= $GNOME_REQUIRED)
+ PKG_CHECK_MODULES(GLADE, glade-sharp-2.0 >= $GLADE_REQUIRED)
