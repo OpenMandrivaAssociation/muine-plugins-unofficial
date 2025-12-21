@@ -13,6 +13,11 @@ License: GPL
 Group: Sound
 Url: https://www.public.asu.edu/~bnickel/MuinePluginsUnofficial/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: mono-devel muine
 BuildRequires: libalsa-devel
 BuildRequires: gnome-sharp2-devel
